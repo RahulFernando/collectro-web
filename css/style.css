@@ -150,7 +150,11 @@ header .container .col-md-7 p {
 
 /*  Section 2  */
 
-.cover {
+.section-2 {
+  padding: 15vmin 0vmin;
+}
+
+.solution-cover {
   width: 100%;
   height: 55vmin;
   background: url('../assets/smart-4308821-1920_resize_md.jpg');
@@ -159,7 +163,27 @@ header .container .col-md-7 p {
   position: relative;
 }
 
-.cover .overlay {
+.document-cover {
+  width: 100%;
+  height: 55vmin;
+  background: url('../assets/pexels-jessica-lynn-lewis-583847.jpg');
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.presentation-cover {
+  width: 100%;
+  height: 55vmin;
+  background: url('../assets/pexels-fauxels-3184328.jpg');
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.solution-cover .overlay,
+.document-cover .overlay,
+.presentation-cover .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -168,20 +192,26 @@ header .container .col-md-7 p {
   z-index: 999;
 }
 
-.cover .content {
+.solution-cover .content,
+.document-cover .content,
+.presentation-cover .content {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
   padding-top: 19vmin;
 }
 
-.cover .content > h1 {
+.solution-cover .content > h1,
+.document-cover .content > h1,
+.presentation-cover .content > h1 {
   font-family: var(--Patua);
   font-size: 6vmin;
   color: whitesmoke;
 }
 
-.cover .content > p {
+.solution-cover .content > p,
+.document-cover .content > p
+.presentation-cover .content > p {
   font-family: var(--Rubik);
   font-size: 2vmin;
   color: #e5e5e5;
@@ -199,6 +229,22 @@ header .container .col-md-7 p {
   box-shadow: 1px 2px 50px 0px rgba(63, 191, 127, 0.349);
 }
 
+.numbers .card {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 20rem;
+  margin: 1rem;
+  padding: 0;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(63, 191, 127, 0.349);
+}
+
+.numbers .card .card_img {
+  height: 280px;
+}
+
 .numbers {
   margin-top: -15vmin;
 }
@@ -206,6 +252,11 @@ header .container .col-md-7 p {
 .numbers .rect h5 {
   font-size: 1.5rem;
   color: #11998e;
+}
+
+.numbers .card h6 {
+  padding-top: 0.5rem;
+  color: black;
 }
 
 .numbers .rect > p {
